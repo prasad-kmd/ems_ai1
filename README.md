@@ -78,3 +78,16 @@ To deploy:
 ├── user_dashboard.php        # User dashboard for booking events
 ├── README.md                # Project documentation
 └── database.sql             # SQL file for creating database tables
+```
+
+
+### Key Sections:
+1. **Features**: A brief description of the system's functionality.
+2. **Installation**: Step-by-step instructions for setting up the project locally.
+3. **Deployment**: Instructions for deploying the project to a hosting provider.
+4. **Project Structure**: Overview of the folder structure and key files.
+5. **License**: Specify if there’s any licensing involved (e.g., MIT License).
+
+### Additional Customization
+- **Database setup**: You may want to add specific instructions for setting up the database and importing tables.
+- **Admin credentials**
