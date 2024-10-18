@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Nasalization Rg';
+    src: url('NasalizationRg-Regular.woff2') format('woff2'),
+        url('NasalizationRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
