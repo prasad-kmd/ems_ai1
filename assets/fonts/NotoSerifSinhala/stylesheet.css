@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'Noto Serif Sinhala';
-    src: url('NotoSerifSinhala-Regular.woff2') format('woff2'),
-        url('NotoSerifSinhala-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Noto Serif Sinhala";
+  src: url("NotoSerifSinhala-Regular.woff2") format("woff2"),
+    url("NotoSerifSinhala-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-

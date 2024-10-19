@@ -1,3 +1,6 @@
+/* Created & Modified by Prasad Madhuranga @ 2024.10 */
+/* Custom CSS properties & UI deatails added */
+
 .iconsocial {
   scale: 1;
 }
@@ -44,7 +47,6 @@
 }
 
 @-webkit-keyframes flicker {
-
   0%,
   19.999%,
   22%,
@@ -69,7 +71,6 @@
 }
 
 @keyframes flicker {
-
   0%,
   19.999%,
   22%,
@@ -96,14 +97,17 @@
 /* --------------------------------------------- */
 
 .indexdiv {
-  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  background: 50% 100%/50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 10px;
-  font-family: 'Product Sans Black';
-  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
-  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  font-family: "Product Sans Black";
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
 }
 
 @-webkit-keyframes reveal {
@@ -266,23 +270,23 @@
   cursor: pointer;
   /* margin: 20px; */
   /* height: 55px; */
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
 
   border-radius: 5px;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-hover:focus {
@@ -290,20 +294,26 @@
 }
 
 .btn-hover.color-1 {
-  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
-.homebtnen{
+.homebtnen {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   /* width: 300px; */
   /* height: 150px; */
   color: white;
-  font-family: 'Product Sans';
+  font-family: "Product Sans";
   /* font-size: 2.5rem; */
-  text-align:center;
+  text-align: center;
   --borderWidth: 3px;
   background: black;
   position: relative;
@@ -311,28 +321,37 @@
 }
 
 .homebtnen:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 3s ease infinite;
   background-size: 400% 400%;
 }
 
-
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
