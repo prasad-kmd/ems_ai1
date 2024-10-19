@@ -39,22 +39,22 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'assets/img/hero-bg.webp': 'center',
-							'assets/img/hero-bg-2.webp': 'center',
-							'assets/img/hero-bg-3.webp': 'center',
-							'assets/img/hero-bg-9.webp': 'center',
-							'assets/img/hero-bg-5.webp': 'center',
-							'assets/img/hero-bg-12.webp': 'center',
-							'assets/img/hero-bg-14.webp': 'center',
-							'assets/img/hero-bg-6.webp': 'center',
-							'assets/img/hero-bg.webp': 'center',
-							'assets/img/hero-bg-15.webp': 'center',
-							'assets/img/hero-bg-11.webp': 'center',
-							'assets/img/hero-bg-7.webp': 'center',
-							'assets/img/hero-bg-13.webp': 'center',
-							'assets/img/hero-bg-10.webp': 'center',
-							'assets/img/hero-bg-4.webp': 'center',
-							'assets/img/hero-bg-8.webp': 'center'
+							'assets/img/hero-bg/hero-bg.webp': 'center',
+							'assets/img/hero-bg/hero-bg-2.webp': 'center',
+							'assets/img/hero-bg/hero-bg-3.webp': 'center',
+							'assets/img/hero-bg/hero-bg-9.webp': 'center',
+							'assets/img/hero-bg/hero-bg-5.webp': 'center',
+							'assets/img/hero-bg/hero-bg-12.webp': 'center',
+							'assets/img/hero-bg/hero-bg-14.webp': 'center',
+							'assets/img/hero-bg/hero-bg-6.webp': 'center',
+							'assets/img/hero-bg/hero-bg.webp': 'center',
+							'assets/img/hero-bg/hero-bg-15.webp': 'center',
+							'assets/img/hero-bg/hero-bg-11.webp': 'center',
+							'assets/img/hero-bg/hero-bg-7.webp': 'center',
+							'assets/img/hero-bg/hero-bg-13.webp': 'center',
+							'assets/img/hero-bg/hero-bg-10.webp': 'center',
+							'assets/img/hero-bg/hero-bg-4.webp': 'center',
+							'assets/img/hero-bg/hero-bg-8.webp': 'center'
 						},
 
 					// Delay.
