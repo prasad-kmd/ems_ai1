@@ -2,6 +2,8 @@
 
 An event management system built using **HTML**, **PHP**, **MySQL**, and **WampServer**. This system allows users to register, log in, book events, and manage event bookings. Admins can manage events, users, and clients.
 
+## Try a [Demo](https://prasad-kmd.github.io/ems_ai1/)
+
 ## Features
 
 - User registration and login system.
