@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Neuropol';
+    src: url('Neuropol-Regular.eot');
+    src: url('Neuropol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Neuropol-Regular.woff2') format('woff2'),
+        url('Neuropol-Regular.woff') format('woff'),
+        url('Neuropol-Regular.ttf') format('truetype'),
+        url('Neuropol-Regular.svg#Neuropol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('Quicksand-Light.eot');
+    src: url('Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('Quicksand-Light.woff2') format('woff2'),
+        url('Quicksand-Light.woff') format('woff'),
+        url('Quicksand-Light.ttf') format('truetype'),
+        url('Quicksand-Light.svg#Quicksand-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif Sinhala';
+    src: url('NotoSerifSinhala-Regular.eot');
+    src: url('NotoSerifSinhala-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NotoSerifSinhala-Regular.woff2') format('woff2'),
+        url('NotoSerifSinhala-Regular.woff') format('woff'),
+        url('NotoSerifSinhala-Regular.ttf') format('truetype'),
+        url('NotoSerifSinhala-Regular.svg#NotoSerifSinhala-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbit';
+    src: url('Orbit-Regular.eot');
+    src: url('Orbit-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Orbit-Regular.woff2') format('woff2'),
+        url('Orbit-Regular.woff') format('woff'),
+        url('Orbit-Regular.ttf') format('truetype'),
+        url('Orbit-Regular.svg#Orbit-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuropol';
+    src: url('Neuropol-Regular_1.eot');
+    src: url('Neuropol-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Neuropol-Regular_1.woff2') format('woff2'),
+        url('Neuropol-Regular_1.woff') format('woff'),
+        url('Neuropol-Regular_1.ttf') format('truetype'),
+        url('Neuropol-Regular_1.svg#Neuropol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dimitri Swank';
+    src: url('DimitriSwank.eot');
+    src: url('DimitriSwank.eot?#iefix') format('embedded-opentype'),
+        url('DimitriSwank.woff2') format('woff2'),
+        url('DimitriSwank.woff') format('woff'),
+        url('DimitriSwank.ttf') format('truetype'),
+        url('DimitriSwank.svg#DimitriSwank') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cubic';
+    src: url('Cubic.eot');
+    src: url('Cubic.eot?#iefix') format('embedded-opentype'),
+        url('Cubic.woff2') format('woff2'),
+        url('Cubic.woff') format('woff'),
+        url('Cubic.ttf') format('truetype'),
+        url('Cubic.svg#Cubic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nasalization Rg';
+    src: url('NasalizationRg-Regular.eot');
+    src: url('NasalizationRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NasalizationRg-Regular.woff2') format('woff2'),
+        url('NasalizationRg-Regular.woff') format('woff'),
+        url('NasalizationRg-Regular.ttf') format('truetype'),
+        url('NasalizationRg-Regular.svg#NasalizationRg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abhaya Libre';
+    src: url('AbhayaLibre-Medium.eot');
+    src: url('AbhayaLibre-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AbhayaLibre-Medium.woff2') format('woff2'),
+        url('AbhayaLibre-Medium.woff') format('woff'),
+        url('AbhayaLibre-Medium.ttf') format('truetype'),
+        url('AbhayaLibre-Medium.svg#AbhayaLibre-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yaldevi';
+    src: url('Yaldevi-Regular.eot');
+    src: url('Yaldevi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Yaldevi-Regular.woff2') format('woff2'),
+        url('Yaldevi-Regular.woff') format('woff'),
+        url('Yaldevi-Regular.ttf') format('truetype'),
+        url('Yaldevi-Regular.svg#Yaldevi-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UN-Arundathee';
+    src: url('UN-Arundathee.eot');
+    src: url('UN-Arundathee.eot?#iefix') format('embedded-opentype'),
+        url('UN-Arundathee.woff2') format('woff2'),
+        url('UN-Arundathee.woff') format('woff'),
+        url('UN-Arundathee.ttf') format('truetype'),
+        url('UN-Arundathee.svg#UN-Arundathee') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Google September 2015';
+    src: url('GoogleSeptember2015.eot');
+    src: url('GoogleSeptember2015.eot?#iefix') format('embedded-opentype'),
+        url('GoogleSeptember2015.woff2') format('woff2'),
+        url('GoogleSeptember2015.woff') format('woff'),
+        url('GoogleSeptember2015.ttf') format('truetype'),
+        url('GoogleSeptember2015.svg#GoogleSeptember2015') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aquatico';
+    src: url('Aquatico-Regular.eot');
+    src: url('Aquatico-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Aquatico-Regular.woff2') format('woff2'),
+        url('Aquatico-Regular.woff') format('woff'),
+        url('Aquatico-Regular.ttf') format('truetype'),
+        url('Aquatico-Regular.svg#Aquatico-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Computerfont';
+    src: url('Computerfont.eot');
+    src: url('Computerfont.eot?#iefix') format('embedded-opentype'),
+        url('Computerfont.woff2') format('woff2'),
+        url('Computerfont.woff') format('woff'),
+        url('Computerfont.ttf') format('truetype'),
+        url('Computerfont.svg#Computerfont') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('GoogleSans-Regular.eot');
+    src: url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GoogleSans-Regular.woff2') format('woff2'),
+        url('GoogleSans-Regular.woff') format('woff'),
+        url('GoogleSans-Regular.ttf') format('truetype'),
+        url('GoogleSans-Regular.svg#GoogleSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
