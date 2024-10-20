@@ -26,29 +26,32 @@ An event management system built using **HTML**, **PHP**, **MySQL**, and **WampS
 ### Steps to Set Up Locally
 
 1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/prasad-kmd/ems_ai1.git
-    ```
+
+   ```bash
+   git clone https://github.com/prasad-kmd/ems_ai1.git
+   ```
 
 2. **Start WampServer** and place the cloned repository in the `www` directory.
-    ```
-    C:/wamp64/www/ems_ai1/
-    ```
+
+   ```
+   C:/wamp64/www/ems_ai1/
+   ```
 
 3. **Create the database**:
-    - Go to [phpMyAdmin](http://localhost/phpmyadmin) and create a new database, e.g., `ems_ai1`.
-    - Import the SQL file (`database.sql`) to set up the necessary tables.
-    
+   - Go to [phpMyAdmin](http://localhost/phpmyadmin) and create a new database, e.g., `ems_ai1`.
+   - Import the SQL file (`database.sql`) to set up the necessary tables.
 4. **Configure the database connection**:
-    - Open `config.php` (or wherever your database connection is set).
-    - Update the database credentials:
-    ```php
-    $conn = new mysqli('localhost', 'root', '', 'ems_ai1');
-    ```
+
+   - Open `config.php` (or wherever your database connection is set).
+   - Update the database credentials:
+
+   ```php
+   $conn = new mysqli('localhost', 'root', '', 'ems_ai1');
+   ```
 
 5. **Run the project**:
-    - Open your browser and go to [http://localhost/ems_ai1](http://localhost/ems_ai1).
-    - Register as a user or log in with admin credentials (if pre-configured).
+   - Open your browser and go to [http://localhost/ems_ai1](http://localhost/ems_ai1).
+   - Register as a user or log in with admin credentials (if pre-configured).
 
 ## Deployment
 
@@ -61,6 +64,7 @@ If you want to deploy this project online, consider using free hosting services 
 - **Byet.Host**: [https://byet.host](https://byet.host)
 
 To deploy:
+
 1. Export the database from `phpMyAdmin` on your local environment.
 2. Create a database on the hosting provider and import the exported SQL.
 3. Upload all files via FTP to the hosting provider’s **public_html** directory.
@@ -82,8 +86,8 @@ To deploy:
 └── database.sql             # SQL file for creating database tables
 ```
 
-
 ### Key Sections:
+
 1. **Features**: A brief description of the system's functionality.
 2. **Installation**: Step-by-step instructions for setting up the project locally.
 3. **Deployment**: Instructions for deploying the project to a hosting provider.
@@ -91,5 +95,6 @@ To deploy:
 5. **License**: Specify if there’s any licensing involved (e.g., MIT License).
 
 ### Additional Customization
+
 - **Database setup**: You may want to add specific instructions for setting up the database and importing tables.
 - **Admin credentials**
