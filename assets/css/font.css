@@ -9,24 +9,8 @@ Created for New Websites.
 Now Web index should be faster than previous version. */
 
 /* ~~~ Link to HTML ~~~ */
-.indexspan1 {
-  font-family: UN-Arundathee;
-}
-
-.headersi1 {
-  font-family: UN-Arundathee;
-}
-
-.headersi2 {
-  font-family: UN-Gurulugomi;
-}
-
-.navbarlistsi {
-  font-family: UN-Bindumathi;
-}
-
-.navbarlisten {
-  font-family: Product Sans;
+.h1{
+  font-family: "Neuropol";
 }
 .navbarlist01 {
   display: inline;
