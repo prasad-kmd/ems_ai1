@@ -8,3 +8,34 @@ Created for New Websites.
 /* Version 2 - Revision 1 : Previous Font types removed & New Font types added as WOFF/WOFF2 .
 Now Web index should be faster than previous version. */
 
+/* ~~~ Link to HTML ~~~ */
+.ftr01 {
+  font-family: "Orbit";
+}
+
+.navbarlist01 {
+  font-family: "Nasalization Rg";
+  display: inline;
+}
+.h1 {
+  font-family: "Neuropol";
+}
+
+.navbarlist01:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.35);
+  transition-duration: 0.5s;
+  border-radius: 1px;
+}
+
+.indexbtnsi {
+  font-family: "Noto Serif Sinhala";
+}
+
+.indexbtnen {
+  font-family: "Neuropol";
+}
+
+.emstl1 {
+  font-family: "Quicksand";
+}
