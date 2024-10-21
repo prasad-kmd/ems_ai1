@@ -86,9 +86,30 @@ if (isset($_GET['edit_event'])) {
         input[type="submit"]:hover {
             background-color: #31b0d5;
         }
+        /* Position and Blur Video */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            /* min-width: 100%; */
+            /* min-height: 100%; */
+            z-index: -1;
+            /* Behind other elements */
+            object-fit: cover;
+            filter: blur(2.5px);
+            /* Blur effect */
+            transform: scale(1.1);
+            /* Slight scale to ensure full coverage after blur */
+        }
     </style>
 </head>
 <body>
+    <!-- Background Video with Blur -->
+    <video autoplay muted loop class="background-video">
+        <source src="assets/videos/18069166-uhd_3840_2160_24fps.mp4" type="video/mp4"> <!-- Replace with your video path -->
+        Your browser does not support the video tag.
+    </video>
     <h2>Admin Dashboard</h2>
     
     <h3>Manage Users</h3>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,28 +23,37 @@
             position: fixed;
             top: 0;
             left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1; /* Behind other elements */
+            width: 100vw;
+            /* min-width: 100%; */
+            /* min-height: 100%; */
+            z-index: -1;
+            /* Behind other elements */
             object-fit: cover;
-            filter: blur(10px); /* Blur effect */
-            transform: scale(1.1); /* Slight scale to ensure full coverage after blur */
+            filter: blur(1.5px);
+            /* Blur effect */
+            transform: scale(1.1);
+            /* Slight scale to ensure full coverage after blur */
         }
 
         /* Glassmorphism Form Styling */
         .registration-form {
-            background: rgba(255, 255, 255, 0.15); /* Transparent background */
+            background: rgba(255, 255, 255, 0.15);
+            /* Transparent background */
             border-radius: 15px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+            backdrop-filter: blur(10px);
+            /* Blur effect for glassmorphism */
             -webkit-backdrop-filter: blur(10px);
             padding: 40px;
             width: 350px;
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border for glassmorphism */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            /* Soft border for glassmorphism */
         }
 
         /* Form Input Styling */
-        input[type="text"], input[type="email"], input[type="password"] {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
             width: 100%;
             padding: 12px;
             margin: 10px 0;
@@ -55,7 +65,8 @@
 
         /* Fluent Design-Inspired Button */
         .button {
-            background-color: #0078D7; /* Fluent Design Blue */
+            background-color: #0078D7;
+            /* Fluent Design Blue */
             color: white;
             padding: 12px;
             width: 100%;
@@ -68,7 +79,8 @@
         }
 
         .button:hover {
-            background-color: #005a9e; /* Darker blue on hover */
+            background-color: #005a9e;
+            /* Darker blue on hover */
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         }
 
@@ -85,6 +97,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Background Video with Blur -->
@@ -110,6 +123,7 @@
     </audio>
 
 </body>
+
 </html>
 
 <?php
