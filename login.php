@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/semantic.css" />
+    <link rel="stylesheet" href="assets/css/icon.css">
     <title>User Login</title>
     <style>
         body {
@@ -69,8 +71,26 @@
     </video>
     <h2>User Login</h2>
     <form action="login.php" method="POST">
-        <input type="text" name="username" placeholder="Username" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
+        <div class="ui labeled input">
+            <div class="ui label">
+                Username
+            </div>
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <br /><br>
+        <div class="ui labeled input">
+            <div class="ui label">
+                Password
+            </div>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <br>
+        <div class="ui animated button" tabindex="0">
+            <div class="visible content">Next</div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </div>
         <input type="submit" name="submit" value="Login">
     </form>
     <!-- Hidden Music Player -->
@@ -78,6 +98,7 @@
         <source src="assets/audio/nanosuit_showroom_fm.ogg" type="audio/ogg" /> <!-- Replace with your music file -->
         Your browser does not support the audio element.
     </audio>
+    <script src="assets/js/semantic.js"></script>
 </body>
 
 </html>
