@@ -89,7 +89,7 @@
 
     <!-- Background Video with Blur -->
     <video autoplay muted loop class="background-video">
-        <source src="background-video.mp4" type="video/mp4"> <!-- Replace with your video path -->
+        <source src="assets/videos/8303104-hd_1920_1080_24fps.mp4" type="video/mp4"> <!-- Replace with your video path -->
         Your browser does not support the video tag.
     </video>
 
@@ -105,7 +105,7 @@
 
     <!-- Hidden Music Player -->
     <audio autoplay loop>
-        <source src="background-music.mp3" type="audio/mpeg"> <!-- Replace with your music file -->
+        <source src="assets/audio/nanosuit_showroom_fm.ogg" type="audio/ogg" /> <!-- Replace with your music file -->
         Your browser does not support the audio element.
     </audio>
 
