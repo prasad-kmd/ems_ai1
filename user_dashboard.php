@@ -20,12 +20,14 @@ $userResult = $conn->query($userQuery);
 $userRow = $userResult->fetch_assoc();
 $userId = $userRow['id'];
 
-// Fetch all events and check if the user has booked them
+// Fetch upcoming events (future dates only)
+$today = date('Y-m-d');
 $eventQuery = "
     SELECT e.event_id, e.event_name, e.event_date, e.event_venue,
            IF(b.user_id IS NULL, 'Available', 'Booked') AS booking_status
     FROM events e
     LEFT JOIN bookings b ON e.event_id = b.event_id AND b.user_id = $userId
+    WHERE e.event_date >= '$today'
 ";
 $eventResult = $conn->query($eventQuery);
 ?>
@@ -74,7 +76,7 @@ $eventResult = $conn->query($eventQuery);
 <body>
     <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
 
-    <h3>Available Events</h3>
+    <h3>Upcoming Events</h3>
     <table>
         <tr>
             <th>Event Name</th>
@@ -103,40 +105,12 @@ $eventResult = $conn->query($eventQuery);
         <?php } ?>
     </table>
 
-    <h3>My Bookings</h3>
-    <?php
-    // Fetch user's bookings
-    $bookingQuery = "
-        SELECT e.event_name, e.event_date, e.event_venue, b.booking_date
-        FROM bookings b
-        JOIN events e ON b.event_id = e.event_id
-        WHERE b.user_id = $userId
-    ";
-    $bookingResult = $conn->query($bookingQuery);
-    ?>
-    <table>
-        <tr>
-            <th>Event Name</th>
-            <th>Date</th>
-            <th>Venue</th>
-            <th>Booking Date</th>
-        </tr>
-        <?php while ($bookingRow = $bookingResult->fetch_assoc()) { ?>
-        <tr>
-            <td><?php echo $bookingRow['event_name']; ?></td>
-            <td><?php echo $bookingRow['event_date']; ?></td>
-            <td><?php echo $bookingRow['event_venue']; ?></td>
-            <td><?php echo $bookingRow['booking_date']; ?></td>
-        </tr>
-        <?php } ?>
-    </table>
-
     <a href="logout.php">Logout</a>
 </body>
 </html>
 
 <?php
-// Handle event booking
+// Handle event booking (same as before)
 if (isset($_POST['book'])) {
     $eventId = $_POST['event_id'];
 

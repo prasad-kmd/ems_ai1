@@ -20,6 +20,31 @@ $userResult = $conn->query($userQuery);
 // Fetch all events
 $eventQuery = "SELECT * FROM events";
 $eventResult = $conn->query($eventQuery);
+
+// If the edit form is submitted, update the event
+if (isset($_POST['save_event'])) {
+    $event_id = $_POST['event_id'];
+    $event_name = $_POST['event_name'];
+    $event_date = $_POST['event_date'];
+    $event_venue = $_POST['event_venue'];
+
+    $updateEventQuery = "UPDATE events SET event_name='$event_name', event_date='$event_date', event_venue='$event_venue' WHERE event_id=$event_id";
+
+    if ($conn->query($updateEventQuery) === TRUE) {
+        echo "<script>alert('Event updated successfully!'); window.location.href='admin_dashboard.php';</script>";
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+}
+
+// Fetch event details for editing
+$editEvent = null;
+if (isset($_GET['edit_event'])) {
+    $event_id = $_GET['edit_event'];
+    $editEventQuery = "SELECT * FROM events WHERE event_id=$event_id";
+    $editEventResult = $conn->query($editEventQuery);
+    $editEvent = $editEventResult->fetch_assoc();
+}
 ?>
 
 <!DOCTYPE html>
@@ -51,14 +76,14 @@ $eventResult = $conn->query($eventQuery);
             background-color: #5bc0de;
             color: white;
         }
-        a {
-            text-decoration: none;
-            padding: 10px;
+        input[type="submit"] {
+            padding: 10px 20px;
             background-color: #5bc0de;
             color: white;
-            border-radius: 5px;
+            border: none;
+            cursor: pointer;
         }
-        a:hover {
+        input[type="submit"]:hover {
             background-color: #31b0d5;
         }
     </style>
@@ -99,6 +124,7 @@ $eventResult = $conn->query($eventQuery);
             <th>Event Name</th>
             <th>Date</th>
             <th>Venue</th>
+            <th>Action</th>
         </tr>
         <?php while ($eventRow = $eventResult->fetch_assoc()) { ?>
         <tr>
@@ -106,9 +132,23 @@ $eventResult = $conn->query($eventQuery);
             <td><?php echo $eventRow['event_name']; ?></td>
             <td><?php echo $eventRow['event_date']; ?></td>
             <td><?php echo $eventRow['event_venue']; ?></td>
+            <td>
+                <a href="admin_dashboard.php?edit_event=<?php echo $eventRow['event_id']; ?>">Edit</a>
+            </td>
         </tr>
         <?php } ?>
     </table>
+
+    <?php if ($editEvent) { ?>
+    <h3>Edit Event</h3>
+    <form action="admin_dashboard.php" method="POST">
+        <input type="hidden" name="event_id" value="<?php echo $editEvent['event_id']; ?>">
+        <input type="text" name="event_name" value="<?php echo $editEvent['event_name']; ?>" required>
+        <input type="date" name="event_date" value="<?php echo $editEvent['event_date']; ?>" required>
+        <input type="text" name="event_venue" value="<?php echo $editEvent['event_venue']; ?>" required>
+        <input type="submit" name="save_event" value="Save">
+    </form>
+    <?php } ?>
 
     <a href="logout.php">Logout</a>
 </body>
@@ -122,13 +162,14 @@ if (isset($_POST['add_event'])) {
     $event_venue = $_POST['event_venue'];
 
     // Insert new event into the database
-    $insertQuery = "INSERT INTO events (event_name, event_date, event_venue) VALUES ('$event_name', '$event_date', '$event_venue')";
+    $insertEventQuery = "INSERT INTO events (event_name, event_date, event_venue) VALUES ('$event_name', '$event_date', '$event_venue')";
     
-    if ($conn->query($insertQuery) === TRUE) {
+    if ($conn->query($insertEventQuery) === TRUE) {
         echo "<script>alert('Event added successfully!'); window.location.href='admin_dashboard.php';</script>";
     } else {
-        echo "Error: " . $insertQuery . "<br>" . $conn->error;
+        echo "Error: " . $insertEventQuery . "<br>" . $conn->error;
     }
 }
+
 $conn->close();
 ?>
